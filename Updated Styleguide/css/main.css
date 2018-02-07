@@ -9,7 +9,7 @@ img {
   width: 100%;
 }
 
-#desktop img, #smartphone img, #smartwatch img, #gameconsole img {
+#desktop img, #smartphone img, #smartwatch img, #gameconsole img #sitemap img {
   padding-bottom: 2em;
 }
 
