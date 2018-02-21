@@ -29,8 +29,17 @@
 	float: left;
 }
 
+.continents-item {
+  width: 16.66%;
+  float: left;
+}
+
+.continents-item img {
+ 	max-width: 100%;
+}
+
 .container-item img {
-	max-width: 100%;
+ 	max-width: 100%;
 }
 
 #smartwatch .container-item, #gameconsole .container-item {

@@ -1,6 +1,6 @@
 .continents {
   position: relative;
-  width: 50%;
+  /* width: 50%; */
 }
 
 .productimage {
@@ -27,7 +27,7 @@
 
 .producttext {
   color: white;
-  font-size: 1.5rem;
+  font-size: 1.2rem;
   font-family: 'Oswald', 'Arial', sans-serif;
   font-weight: normal;
   text-transform: uppercase;
@@ -38,4 +38,12 @@
   transform: translate(-50%, -50%);
   -ms-transform: translate(-50%, -50%);
   text-align: center;
+}
+
+ul {
+  white-space: nowrap;
+}
+ul, li {
+  list-style: none;
+  display: inline;
 }
