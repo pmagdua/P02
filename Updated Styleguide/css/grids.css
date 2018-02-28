@@ -1,0 +1,174 @@
+*, *::after, *::before {
+  box-sizing: border-box;
+}
+
+.container {
+  display: flex;
+  display: -webkit-flex;
+  display: -ms-flex;
+
+  -webkit-flex-wrap: wrap;
+	-ms-flex-wrap: wrap;
+	flex-wrap: wrap;
+
+  -webkit-justify-content: space-around;
+	-ms-justify-content: space-around;
+	justify-content: space-around;
+
+	margin-left: 0;
+}
+
+.container:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.container-item {
+	width: 33.33%;
+	float: left;
+  padding: 1em;
+}
+
+.continents-item {
+  width: 16.66%;
+  float: left;
+}
+
+.continents-item img {
+ 	max-width: 100%;
+}
+
+.container-item img {
+ 	max-width: 100%;
+}
+
+#smartwatch .container-item, #gameconsole .container-item {
+  width: 50%;
+  float: left;
+}
+
+@media (max-width: 35em) {
+
+  /* From 3 columns to 1 column */
+  .container-item {
+    width: 100%;
+  }
+
+  .main-content {
+    margin-left: 3%;
+    margin-right: 3%;
+    margin-top: 0.5em;
+  }
+
+  /* Edit nav bar */
+  header {
+    position: relative;
+  }
+
+  .nav-top {
+    float: none;
+    padding-bottom: 0.01em;
+  }
+
+  .nav-top h1 {
+    margin-left: 4%;
+  }
+
+  /* .nav-top a {
+    margin: 0;
+    float: left;
+    padding-left: 1em;
+    padding-right: 1em;
+    padding-top: 0;
+  } */
+
+  .nav-top-links {
+    float: left;
+    margin-left: 4%;
+    /* padding-top: 0;
+    margin-top: 0; */
+  }
+
+  /* Hide nav links */
+  .nav-top a {
+    display: none;
+    padding-top: 0;
+    margin-top: 0;
+  }
+
+  /* Show hamburger icon */
+  .nav-top a.icon, a:visited.icon {
+    float: right;
+    display: block;
+    margin-top: 1.75em;
+  }
+
+  .nav-top.responsive {
+    position: relative;
+  }
+
+  .nav-top.responsive a.icon {
+   position: absolute;
+   right: 0;
+   top: 0;
+  }
+
+  .nav-top.responsive a {
+   float: left;
+   display: block;
+   text-align: left;
+  }
+
+  /* DEMO OF NAV BAR IN STYLEGUIDE */
+  .nav-demo {
+    float: left;
+    margin-bottom: 2em;
+    width: 100%;
+  }
+
+  .nav-demo h1 {
+    margin-left: 0;
+  }
+
+  .nav-demo a {
+    margin: 0;
+    float: left;
+    padding-left: 1em;
+    padding-right: 1em;
+    padding-top: 0;
+  }
+
+  section {
+    padding: 0.2em;
+  }
+
+  #interactive-elem, #combined-elem {
+    padding-top: 0.2em;
+  }
+
+  /* Edit continents grid */
+  .continents-item {
+    width: 33.33%;
+  }
+}
+
+/* TABLET SIZED */
+@media (max-width: 48em) {
+  .main-content {
+    margin-left: 3%;
+    margin-right: 3%;
+  }
+
+  .container-item {
+    width: 100%;
+  }
+}
+
+/* NARROWER WEB BROWSER */
+@media (max-width: 70em) {
+  .main-content {
+    margin-left: 5%;
+    margin-right: 5%;
+  }
+}

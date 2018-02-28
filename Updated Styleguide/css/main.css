@@ -1,0 +1,346 @@
+<<<<<<< HEAD
+/* GENERAL STYLES */
+body {
+  font-size: 1rem;
+  margin: 0 auto;
+  padding: 0 auto;
+=======
+/* TEXT AND IMAGE */
+body {
+  font-size: 1rem;
+  margin: 0;
+  padding: 0;
+>>>>>>> reiza
+}
+
+img {
+  width: 100%;
+}
+
+<<<<<<< HEAD
+#desktop img, #smartphone img, #smartwatch img, #gameconsole img #sitemap img {
+  padding-bottom: 2em;
+}
+
+h1 {
+  font-family: 'Oswald', 'Arial', sans-serif;
+  text-transform: uppercase;
+  font-weight: normal;
+=======
+h1 {
+  font-family: 'Oswald', 'Arial', sans-serif;
+  text-transform: uppercase;
+  font-weight: 400;
+>>>>>>> reiza
+  color: #474747;
+  font-size: 1.5em;
+  letter-spacing: 0.1em;
+  padding-bottom: 0.25em;
+  text-align: center;
+}
+
+.container-item h1 {
+  text-align: left;
+}
+
+h2 {
+  font-family: 'Oswald', 'Arial', sans-serif;
+  font-weight: normal;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  font-size: 1.5em;
+  color: #474747;
+}
+
+h3 {
+  font-family: 'Source Sans Pro', 'Arial', sans-serif;
+  font-weight: bold;
+  font-size: 1.2em;
+  color: #474747;
+}
+
+a, a:visited {
+  text-decoration: none;
+  color: #474747;
+  -webkit-transition: color 0.5s;
+  transition: color 0.5s;
+}
+
+a:hover, a:active, a:focus {
+  color: #a8a8a8;
+}
+
+p, li, form, button, cite {
+  font-family: 'Source Sans Pro', 'Arial', sans-serif;
+  font-weight: 300;
+  font-size: 1.2em;
+  line-height: 1.5em;
+}
+
+p {
+  max-width: 100%;
+}
+
+p a {
+  font-weight: bolder;
+}
+
+<<<<<<< HEAD
+section {
+  padding-bottom: 2em;
+}
+
+div {
+  padding-bottom: 1em;
+=======
+cite {
+  display: block;
+  padding-bottom: 0.5em;
+>>>>>>> reiza
+}
+
+blockquote {
+  font-family: 'Source Sans Pro', 'Arial', sans-serif;
+  font-weight: 400;
+  font-size: 2.5em;
+  margin: 0;
+}
+
+<<<<<<< HEAD
+=======
+
+/* SPACING */
+
+section {
+  padding-bottom: 2em;
+}
+
+div {
+  padding-bottom: 1em;
+}
+
+
+>>>>>>> reiza
+/* TOP NAVIGATION BAR */
+header {
+  background: #fff;
+  overflow: hidden;
+  min-height: 5em;
+  width: 100%;
+  border-bottom: 0.15px solid #a8a8a8;
+  position: relative;
+  padding: 0;
+  margin: 0;
+<<<<<<< HEAD
+=======
+  /* top: -0.1em; */
+>>>>>>> reiza
+}
+
+header h1 {
+  float: left;
+  margin: 0;
+  padding-top: 0.5em;
+  padding-bottom: 0.5em;
+  padding-left: 5%;
+}
+
+header h1 a, header h1 a:visited {
+<<<<<<< HEAD
+  font-size: 2rem;
+  letter-spacing: 0.1em;
+  font-family: 'Oswald', 'Arial', sans-serif;
+  font-weight: normal;
+}
+
+.nav-top {
+  /* display: inline; */
+  /* float: right; */
+=======
+  margin: 0;
+  font-size: 2rem;
+  letter-spacing: 0.1em;
+  font-family: 'Oswald', 'Arial', sans-serif;
+  font-weight: 400;
+}
+
+.nav-top {
+  display: inline;
+  float: right;
+>>>>>>> reiza
+  padding-right: 5%;
+  margin: 0;
+}
+
+<<<<<<< HEAD
+.nav-top-links {
+  float: right;
+}
+
+=======
+>>>>>>> reiza
+.nav-top a, .nav-top a:visited {
+  display: inline-block;
+  padding: 1.85em 0.75em 1.2em 0.75em;
+  font-size: 1.2rem;
+  font-family: 'Oswald', 'Arial', sans-serif;
+<<<<<<< HEAD
+  font-weight: normal;
+=======
+  font-weight: 400;
+>>>>>>> reiza
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  font-size: 1rem;
+}
+
+<<<<<<< HEAD
+.nav-top .icon {
+  display: none;
+}
+
+/* MAIN CONTENT */
+.main-content {
+  /* float: center; */
+  margin-left: 17%;
+  margin-right: 17%;
+  margin-top: 5em;
+}
+
+cite {
+  display: block;
+  padding-bottom: 0.5em;
+}
+
+button {
+  background-color: #fff;
+}
+
+button a, button a:visited {
+  color: #474747;
+}
+
+button a:hover, button a:focus, button a:active {
+  color: #a8a8a8;
+}
+
+/* DEMO NAV BAR FOR STYLEGUIDE */
+.nav-demo {
+  background: #fff;
+  overflow: hidden;
+  width: 100%;
+  border: 0.15px solid #a8a8a8;
+  margin-bottom: 0.5em;
+}
+
+.nav-demo h1 {
+  float: left;
+  margin: 0;
+  padding-top: 0.5em;
+  padding-bottom: 0.1em;
+  padding-left: 5%;
+  font-weight: normal;
+}
+
+.nav-demo h1 a {
+  font-size: 2rem;
+  letter-spacing: 0.1em;
+}
+
+.nav-demo-links {
+  display: inline;
+  float: right;
+  padding-right: 5%;
+  padding-bottom: 0;
+  margin-bottom: 0;
+}
+
+.nav-demo-links a, .nav-demo-links a:visited {
+  display: inline-block;
+  padding: 1.85em 0.75em 1em 0.75em;
+  font-size: 1rem;
+  font-family: 'Oswald', 'Arial', sans-serif;
+  font-weight: normal;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+}
+
+/* BUTTONS & FORMS */
+=======
+/* MAIN CONTENT */
+.main-content {
+  float: center;
+  margin-left: 17%;
+  margin-right: 17%;
+  margin-top: 4em;
+}
+
+.main-content h1 {
+  text-align: center;
+}
+
+
+/* BUTTONS & FORMS */
+
+>>>>>>> reiza
+button {
+  background-color: #fff;
+}
+
+button a, button a:visited {
+  color: #474747;
+}
+
+button a:hover, button a:focus, button a:active {
+  color: #a8a8a8;
+}
+
+<<<<<<< HEAD
+=======
+/* form {
+  margin-left: 5%;
+  margin-right: 5%;
+} */
+
+>>>>>>> reiza
+input {
+  width: 100%;
+  border: 0.05em solid #a8a8a8;
+  margin-bottom: 1em;
+}
+
+.textbox-message {
+  width: 100%;
+  height: 8em;
+}
+
+.submit-btn {
+  float: right;
+  margin-bottom: 2em;
+}
+
+.p-centered {
+  text-align: center;
+}
+
+/* ABOUT PAGE */
+<<<<<<< HEAD
+#about .container {
+  margin: 2.5em 0 2.5em 0;
+  padding: 0;
+}
+
+#about img {
+=======
+
+.about .container {
+  margin: 1em 0 0em 0;
+  padding: 0;
+}
+
+.about img {
+>>>>>>> reiza
+  /* padding: 3em 0.5em 2em 0.5em; */
+  padding: 0;
+  margin: 0;
+}

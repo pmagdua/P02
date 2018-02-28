@@ -1,0 +1,29 @@
+/* @font-face {
+	font-family: 'Oswald';
+	font-weight: normal;
+	font-style: normal;
+	src: url('../fonts/Oswald-Regular.ttf') format('truetype'),
+} */
+
+@import url('https://fonts.googleapis.com/css?family=Oswald');
+
+@font-face {
+	font-family: 'Source Sans Pro';
+	font-weight: 300;
+	font-style: normal;
+	src: url('../fonts/SourceSansPro-Light.ttf') format('truetype');
+}
+
+@font-face {
+	font-family: 'Source Sans Pro';
+	font-weight: 300;
+	font-style: normal;
+	src: url('../fonts/SourceSansPro-Light.ttf') format('truetype');
+}
+
+@font-face {
+	font-family: 'Source Sans Pro';
+	font-weight: bold;
+	font-style: normal;
+	src: url('../fonts/SourceSansPro-Bold.ttf') format('truetype');
+}
