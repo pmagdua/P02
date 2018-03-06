@@ -27,7 +27,24 @@
 .container-item {
 	width: 33.33%;
 	float: left;
-  padding: 1em;
+}
+
+.container-item-1of3 {
+  width: 33.33%;
+	float: left;
+  padding: 0 0.75em 0 0;
+}
+
+.container-item-2of3 {
+  width: 66.66%;
+  padding: 0 0.75em 0 0;
+	float: left;
+}
+
+.container-item-3of3 {
+  width: 100%;
+	float: left;
+  padding: 0 0.75em 0 0;
 }
 
 .continents-item {
@@ -51,8 +68,9 @@
 @media (max-width: 35em) {
 
   /* From 3 columns to 1 column */
-  .container-item {
+  .container-item, .container-item-1of3, .container-item-2of3 {
     width: 100%;
+    padding: 0;
   }
 
   .main-content {
@@ -160,8 +178,9 @@
     margin-right: 3%;
   }
 
-  .container-item {
+  .container-item, .container-item-1of3, .container-item-2of3 {
     width: 100%;
+    padding: 0;
   }
 }
 

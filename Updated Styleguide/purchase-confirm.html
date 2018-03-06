@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact - Outventure</title>
+
+  <link rel="stylesheet" href="css/main.css">
+  <link rel="stylesheet" href="css/normalize.css">
+  <link rel="stylesheet" href="css/fonts.css">
+  <link rel="stylesheet" href="css/grids.css">
+</head>
+
+<body>
+
+  <!-- HORIZONTAL MENU FOR NAVIGATING WEBSITE -->
+  <header>
+    <h1><a href="index.html">OUTVENTURE</a></h1>
+
+    <!-- Code for responsive menu from https://www.w3schools.com/howto/howto_js_topnav_responsive.asp -->
+      <nav class="nav-top" id="navTop">
+        <nav class="nav-top-links">
+          <a href="trips.html"/>Trips</a>
+          <a href="about.html"/>About Us</a>
+          <a href="contact-form.html"/>Contact</a>
+        </nav>
+
+          <a href="javascript:void(0);" class="icon" onclick="myFunction()">&#9776;</a>
+      </nav>
+
+  </header>
+
+  <section id="purchase-form">
+    <section class="main-content">
+      <h1>Confirm Information</h1>
+
+      <h3>Contact</h3>
+        <div class="container">
+          <p class="container-item-1of3">Simon</p>
+          <p class="container-item-1of3">Fraser</p>
+          <div class="container-item-1of3"></div>
+        </div>
+
+        <div class="container">
+          <p class="container-item-1of3">iat339@sfu.ca</p>
+          <p class="container-item-1of3">(123) 456-789</p>
+          <div class="container-item-1of3"></div>
+        </div>
+
+
+      <h3>Billing Address</h3>
+        <div class="container">
+          <p class="container-item-3of3">339-2018 University Ave</p>
+        </div>
+
+        <div class="container">
+          <p class="container-item-1of3">Surrey</p>
+          <p class="container-item-1of3">British Columbia</p>
+          <p class="container-item-1of3">V3T 0A3</p>
+        </div>
+
+        <h3>Card Information</h3>
+          <div class="container">
+            <p class="container-item-1of3">1234 5678 9012 3456</p>
+            <p class="container-item-1of3">10/2020</p>
+            <p class="container-item-1of3">339</p>
+          </div>
+
+        <form action="purchase-received.html"><button type="submit" class="submit-btn">Submit</button></form>
+        <form action="purchase-form.html"><button type="submit" class="submit-btn">Back</button></form>
+
+    </section>
+  </section>
+
+<script src="js/hamburger.js"></script>
+
+</body>
+
+
+</html>

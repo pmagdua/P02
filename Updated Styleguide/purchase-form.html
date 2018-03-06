@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact - Outventure</title>
+
+  <link rel="stylesheet" href="css/main.css">
+  <link rel="stylesheet" href="css/normalize.css">
+  <link rel="stylesheet" href="css/fonts.css">
+  <link rel="stylesheet" href="css/grids.css">
+</head>
+
+<body>
+
+  <!-- HORIZONTAL MENU FOR NAVIGATING WEBSITE -->
+  <header>
+    <h1><a href="index.html">OUTVENTURE</a></h1>
+
+    <!-- Code for responsive menu from https://www.w3schools.com/howto/howto_js_topnav_responsive.asp -->
+      <nav class="nav-top" id="navTop">
+        <nav class="nav-top-links">
+          <a href="trips.html"/>Trips</a>
+          <a href="about.html"/>About Us</a>
+          <a href="contact-form.html"/>Contact</a>
+        </nav>
+
+          <a href="javascript:void(0);" class="icon" onclick="myFunction()">&#9776;</a>
+      </nav>
+
+  </header>
+
+  <section id="purchase-form">
+    <section class="main-content">
+      <h1>Enter your information</h1>
+
+        <h3>Contact</h3>
+          <div class="container">
+            <input type="text" placeholder="First name" class="container-item-1of3">
+            <input type="text" placeholder="Last name" class="container-item-1of3">
+            <div class="container-item-1of3"></div>
+          </div>
+
+          <div class="container">
+            <input type="text" placeholder="Email" class="container-item-2of3">
+            <input type="text" placeholder="Phone number" class="container-item-1of3">
+          </div>
+
+
+        <h3>Billing Address</h3>
+          <div class="container">
+            <input type="text" placeholder="Street address" class="container-item-3of3">
+          </div>
+
+          <div class="container">
+            <input type="text" placeholder="City" class="container-item-1of3">
+            <input type="text" placeholder="Province or territory" class="container-item-1of3">
+            <!-- <div class="container-item-1of3">
+              <select name="province">
+                <option value="" disabled selected>Province or Territory</option>
+                <option value="ab">AB</option>
+                <option value="bc">BC</option>
+                <option value="mb">MB</option>
+                <option value="nb"></option>
+                <option value="nl">NL</option>
+                <option value="nt">NT</option>
+                <option value="ns">NS</option>
+                <option value="nu">NU</option>
+                <option value="on">ON</option>
+                <option value="qc">QC</option>
+                <option value="sk">SK</option>
+                <option value="yt">YT</option>
+              </select>
+            </div> -->
+            <input type="text" placeholder="Postal code" class="container-item-1of3">
+          </div>
+
+
+          <h3>Card Information</h3>
+            <div class="container">
+              <input type="text" placeholder="Credit card number" class="container-item-1of3">
+              <input type="text" placeholder="MM/YYYY" class="container-item-1of3">
+              <input type="text" placeholder="CVV" class="container-item-1of3">
+            </div>
+
+            <!-- <div class="form-group">
+              <label>MM/YY:</label>
+              <select name="month">
+                <option value="jan">01</option>
+                <option value="feb">02</option>
+                <option value="mar">03</option>
+                <option value="apr">04</option>
+                <option value="may">05</option>
+                <option value="jun">06</option>
+                <option value="jul">07</option>
+                <option value="aug">08</option>
+                <option value="sep">09</option>
+                <option value="oct">10</option>
+                <option value="nov">11</option>
+                <option value="dec">12</option>
+              </select>
+              <select name="year">
+                <option value="2018">2018</option>
+                <option value="2019">2019</option>
+                <option value="2020">2020</option>
+                <option value="2021">2021</option>
+                <option value="2022">2022</option>
+                <option value="2023">2023</option>
+                <option value="2024">2024</option>
+                <option value="2025">2025</option>
+              </select>
+            </div> -->
+    <form action="purchase-confirm.html">
+      <button type="submit" class="submit-btn">Submit</button>
+    </form>
+
+    </section>
+</section>
+
+<script src="js/hamburger.js"></script>
+
+</body>
+
+
+</html>

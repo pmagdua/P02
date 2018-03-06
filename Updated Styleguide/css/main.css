@@ -1,23 +1,14 @@
-<<<<<<< HEAD
 /* GENERAL STYLES */
 body {
   font-size: 1rem;
   margin: 0 auto;
   padding: 0 auto;
-=======
-/* TEXT AND IMAGE */
-body {
-  font-size: 1rem;
-  margin: 0;
-  padding: 0;
->>>>>>> reiza
 }
 
 img {
   width: 100%;
 }
 
-<<<<<<< HEAD
 #desktop img, #smartphone img, #smartwatch img, #gameconsole img #sitemap img {
   padding-bottom: 2em;
 }
@@ -26,12 +17,6 @@ h1 {
   font-family: 'Oswald', 'Arial', sans-serif;
   text-transform: uppercase;
   font-weight: normal;
-=======
-h1 {
-  font-family: 'Oswald', 'Arial', sans-serif;
-  text-transform: uppercase;
-  font-weight: 400;
->>>>>>> reiza
   color: #474747;
   font-size: 1.5em;
   letter-spacing: 0.1em;
@@ -48,7 +33,7 @@ h2 {
   font-weight: normal;
   text-transform: uppercase;
   letter-spacing: 0.1em;
-  font-size: 1.5em;
+  font-size: 1.4em;
   color: #474747;
 }
 
@@ -57,6 +42,12 @@ h3 {
   font-weight: bold;
   font-size: 1.2em;
   color: #474747;
+}
+
+#trips > h3 {
+  padding-top: 0;
+  margin: 0;
+  line-height: 1em;
 }
 
 a, a:visited {
@@ -70,7 +61,7 @@ a:hover, a:active, a:focus {
   color: #a8a8a8;
 }
 
-p, li, form, button, cite {
+p, li, form, button, cite, label, .remove {
   font-family: 'Source Sans Pro', 'Arial', sans-serif;
   font-weight: 300;
   font-size: 1.2em;
@@ -85,18 +76,12 @@ p a {
   font-weight: bolder;
 }
 
-<<<<<<< HEAD
 section {
   padding-bottom: 2em;
 }
 
 div {
   padding-bottom: 1em;
-=======
-cite {
-  display: block;
-  padding-bottom: 0.5em;
->>>>>>> reiza
 }
 
 blockquote {
@@ -106,21 +91,10 @@ blockquote {
   margin: 0;
 }
 
-<<<<<<< HEAD
-=======
-
-/* SPACING */
-
-section {
-  padding-bottom: 2em;
+.bold {
+  font-weight: bold;
 }
 
-div {
-  padding-bottom: 1em;
-}
-
-
->>>>>>> reiza
 /* TOP NAVIGATION BAR */
 header {
   background: #fff;
@@ -131,10 +105,6 @@ header {
   position: relative;
   padding: 0;
   margin: 0;
-<<<<<<< HEAD
-=======
-  /* top: -0.1em; */
->>>>>>> reiza
 }
 
 header h1 {
@@ -146,7 +116,6 @@ header h1 {
 }
 
 header h1 a, header h1 a:visited {
-<<<<<<< HEAD
   font-size: 2rem;
   letter-spacing: 0.1em;
   font-family: 'Oswald', 'Arial', sans-serif;
@@ -156,50 +125,34 @@ header h1 a, header h1 a:visited {
 .nav-top {
   /* display: inline; */
   /* float: right; */
-=======
-  margin: 0;
-  font-size: 2rem;
-  letter-spacing: 0.1em;
-  font-family: 'Oswald', 'Arial', sans-serif;
-  font-weight: 400;
-}
-
-.nav-top {
-  display: inline;
-  float: right;
->>>>>>> reiza
   padding-right: 5%;
   margin: 0;
 }
 
-<<<<<<< HEAD
 .nav-top-links {
   float: right;
 }
 
-=======
->>>>>>> reiza
 .nav-top a, .nav-top a:visited {
   display: inline-block;
   padding: 1.85em 0.75em 1.2em 0.75em;
   font-size: 1.2rem;
   font-family: 'Oswald', 'Arial', sans-serif;
-<<<<<<< HEAD
   font-weight: normal;
-=======
-  font-weight: 400;
->>>>>>> reiza
   text-transform: uppercase;
   letter-spacing: 0.1em;
   font-size: 1rem;
 }
 
-<<<<<<< HEAD
 .nav-top .icon {
   display: none;
 }
 
 /* MAIN CONTENT */
+#trips .main-content {
+  margin-right: 16.25%;
+}
+
 .main-content {
   /* float: center; */
   margin-left: 17%;
@@ -266,23 +219,6 @@ button a:hover, button a:focus, button a:active {
 }
 
 /* BUTTONS & FORMS */
-=======
-/* MAIN CONTENT */
-.main-content {
-  float: center;
-  margin-left: 17%;
-  margin-right: 17%;
-  margin-top: 4em;
-}
-
-.main-content h1 {
-  text-align: center;
-}
-
-
-/* BUTTONS & FORMS */
-
->>>>>>> reiza
 button {
   background-color: #fff;
 }
@@ -295,21 +231,39 @@ button a:hover, button a:focus, button a:active {
   color: #a8a8a8;
 }
 
-<<<<<<< HEAD
-=======
-/* form {
-  margin-left: 5%;
-  margin-right: 5%;
-} */
-
->>>>>>> reiza
 input {
   width: 100%;
   border: 0.05em solid #a8a8a8;
-  margin-bottom: 1em;
 }
 
-.textbox-message {
+#purchase-form .container-item-1of3, .container-item-2of3, .container-item-3of3 {
+  padding: 1em !important;
+}
+
+#promo-code {
+  width: 15%;
+}
+
+/* Placeholder text inside form */
+::-webkit-input-placeholder { /* Chrome/Opera/Safari */
+  padding: 0.25em;
+  font-family: 'Source Sans Pro', 'Arial', sans-serif;
+  font-weight: 400;
+}
+
+::-moz-placeholder { /* Firefox 19+ */
+  padding: 0.25em;
+}
+
+:-ms-input-placeholder { /* IE 10+ */
+  padding: 0.25em;
+}
+
+:-moz-placeholder { /* Firefox 18- */
+  padding: 0.25em;
+}
+
+#textbox-message {
   width: 100%;
   height: 8em;
 }
@@ -324,23 +278,49 @@ input {
 }
 
 /* ABOUT PAGE */
-<<<<<<< HEAD
 #about .container {
   margin: 2.5em 0 2.5em 0;
   padding: 0;
 }
 
 #about img {
-=======
-
-.about .container {
-  margin: 1em 0 0em 0;
-  padding: 0;
-}
-
-.about img {
->>>>>>> reiza
   /* padding: 3em 0.5em 2em 0.5em; */
   padding: 0;
   margin: 0;
+}
+
+/* PURCHASE DETAILS PAGES */
+#purchase-details h3 {
+  margin-top: 0;
+}
+
+.total {
+  text-align: right;
+}
+
+.red {
+  color: #C0392B;
+}
+
+#purchase-details .container-item-2of3 {
+  background: #f2f2f2;
+  padding: 1.5em 0 0 1.5em;
+}
+
+
+/* FOOTER */
+footer {
+  width: 100%;
+  border-top: 0.15px solid #a8a8a8;
+  position: relative;
+  padding: 0;
+  margin: 0;
+}
+
+.footer-content {
+  padding-top: 1.8em;
+  padding-bottom: 0.5em;
+  font-family: "Source Sans Pro", "Arial", sans-serif;
+  font-weight: 300;
+  text-align: center;
 }
