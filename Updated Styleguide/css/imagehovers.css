@@ -40,10 +40,10 @@
   text-align: center;
 }
 
-ul {
-  white-space: nowrap;
-}
-ul, li {
-  list-style: none;
-  display: inline;
+@media (max-width: 30em) {
+  .productoverlay {
+    opacity: 1;
+  }
+
+
 }
