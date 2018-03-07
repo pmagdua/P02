@@ -1,0 +1,208 @@
+*, *::after, *::before {
+  box-sizing: border-box;
+}
+
+.container {
+  display: flex;
+  display: -webkit-flex;
+  display: -ms-flex;
+
+  -webkit-flex-wrap: wrap;
+	-ms-flex-wrap: wrap;
+	flex-wrap: wrap;
+
+  -webkit-justify-content: space-around;
+	-ms-justify-content: space-around;
+	justify-content: space-around;
+
+	margin-left: 0;
+}
+
+.container:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.container-item {
+	width: 33.33%;
+	float: left;
+}
+
+.container-item-1of3 {
+  width: 33.33%;
+	float: left;
+  padding: 0 0.75em 0 0;
+}
+
+.container-item-2of3 {
+  width: 66.66%;
+  padding: 0 0.75em 0 0;
+	float: left;
+}
+
+.container-item-3of3 {
+  width: 100%;
+	float: left;
+  padding: 0 0.75em 0 0;
+}
+
+.continents-item {
+  width: 16.66%;
+  float: left;
+}
+
+.continents-item img {
+ 	max-width: 100%;
+}
+
+.container-item img {
+ 	max-width: 100%;
+}
+
+#smartwatch .container-item, #gameconsole .container-item {
+  width: 50%;
+  float: left;
+}
+
+@media (max-width: 35em) {
+
+  /* From 3 columns to 1 column */
+  .container-item, .container-item-1of3, .container-item-2of3 {
+    width: 100%;
+    padding: 0;
+  }
+
+  .main-content {
+    margin-left: 3%;
+    margin-right: 3%;
+    margin-top: 0.5em;
+  }
+
+  #trips .main-content, #about .main-content {
+    margin-left: 3%;
+    margin-right: 2.25%;
+  }
+
+  /* Edit nav bar */
+  header {
+    position: relative;
+  }
+
+  .nav-top {
+    float: none;
+    padding-bottom: 0.01em;
+  }
+
+  .nav-top h1 {
+    margin-left: 4%;
+  }
+
+  /* .nav-top a {
+    margin: 0;
+    float: left;
+    padding-left: 1em;
+    padding-right: 1em;
+    padding-top: 0;
+  } */
+
+  .nav-top-links {
+    float: left;
+    margin-left: 4%;
+    /* padding-top: 0;
+    margin-top: 0; */
+  }
+
+  /* Hide nav links */
+  .nav-top a {
+    display: none;
+    padding-top: 0;
+    margin-top: 0;
+  }
+
+  /* Show hamburger icon */
+  .nav-top a.icon, a:visited.icon {
+    float: right;
+    display: block;
+    margin-top: 1.75em;
+  }
+
+  .nav-top.responsive {
+    position: relative;
+  }
+
+  .nav-top.responsive a.icon {
+   position: absolute;
+   right: 0;
+   top: 0;
+  }
+
+  .nav-top.responsive a {
+   float: left;
+   display: block;
+   text-align: left;
+  }
+
+  /* DEMO OF NAV BAR IN STYLEGUIDE */
+  .nav-demo {
+    float: left;
+    margin-bottom: 2em;
+    width: 100%;
+  }
+
+  .nav-demo h1 {
+    margin-left: 0;
+  }
+
+  .nav-demo a {
+    margin: 0;
+    float: left;
+    padding-left: 1em;
+    padding-right: 1em;
+    padding-top: 0;
+  }
+
+  section {
+    padding: 0.2em;
+  }
+
+  #interactive-elem, #combined-elem {
+    padding-top: 0.2em;
+  }
+
+  /* Edit continents grid */
+  .continents-item {
+    width: 33.33%;
+  }
+}
+
+/* TABLET SIZED */
+@media (max-width: 768px) {
+  .main-content {
+    margin-left: 3%;
+    margin-right: 3%;
+  }
+
+  #trips .main-content, #about .main-content {
+    margin-left: 3%;
+    margin-right: 2.25%;
+  }
+
+  .container-item, .container-item-1of3, .container-item-2of3 {
+    width: 100%;
+    padding: 0;
+  }
+}
+
+/* NARROWER WEB BROWSER */
+@media (max-width: 1114px) {
+  .main-content {
+    margin-left: 5%;
+    margin-right: 5%;
+  }
+
+  #trips .main-content, #about .main-content {
+    margin-left: 3%;
+    margin-right: 2.25%;
+  }
+}
