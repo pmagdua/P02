@@ -79,6 +79,11 @@
     margin-top: 0.5em;
   }
 
+  #trips .main-content, #about .main-content {
+    margin-left: 3%;
+    margin-right: 2.25%;
+  }
+
   /* Edit nav bar */
   header {
     position: relative;
@@ -172,10 +177,15 @@
 }
 
 /* TABLET SIZED */
-@media (max-width: 48em) {
+@media (max-width: 768px) {
   .main-content {
     margin-left: 3%;
     margin-right: 3%;
+  }
+
+  #trips .main-content, #about .main-content {
+    margin-left: 3%;
+    margin-right: 2.25%;
   }
 
   .container-item, .container-item-1of3, .container-item-2of3 {
@@ -185,9 +195,14 @@
 }
 
 /* NARROWER WEB BROWSER */
-@media (max-width: 70em) {
+@media (max-width: 1114px) {
   .main-content {
     margin-left: 5%;
     margin-right: 5%;
+  }
+
+  #trips .main-content, #about .main-content {
+    margin-left: 3%;
+    margin-right: 2.25%;
   }
 }

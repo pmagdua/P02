@@ -50,6 +50,11 @@ h3 {
   line-height: 1em;
 }
 
+#updates > h2 {
+  padding-top: 0;
+  margin: 0;
+}
+
 a, a:visited {
   text-decoration: none;
   color: #474747;
@@ -123,8 +128,6 @@ header h1 a, header h1 a:visited {
 }
 
 .nav-top {
-  /* display: inline; */
-  /* float: right; */
   padding-right: 5%;
   margin: 0;
 }
@@ -307,10 +310,33 @@ input {
   padding: 1.5em 0 0 1.5em;
 }
 
+/* UPDATES PAGE */
+#updates .container-item-2of3 {
+  background: #f2f2f2;
+  padding: 1.5em 0 0 1.5em;
+}
+
+#updates h2 {
+  padding-top: 0;
+  margin-top: 0;
+}
+
+#updates a, #updates a:visited {
+  font-family: 'Source Sans Pro', 'Arial', sans-serif;
+  text-decoration: none;
+  color: #474747;
+  -webkit-transition: color 0.5s;
+  transition: color 0.5s;
+}
+
+#updates a:hover, #updates a:active, #updates a:focus {
+  color: #a8a8a8;
+}
 
 /* FOOTER */
 footer {
   width: 100%;
+  height: 4em;
   border-top: 0.15px solid #a8a8a8;
   position: relative;
   padding: 0;

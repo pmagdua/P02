@@ -44,10 +44,28 @@
   text-align: center;
 }
 
+#trips .producttext {
+  font-family: 'Source Sans Pro', 'Arial', sans-serif;
+  letter-spacing: 0;
+  font-weight: 400;
+  font-size: 1.1em;
+  line-height: 1.5em;
+  text-transform: none;
+}
+
 ul {
   white-space: nowrap;
 }
 ul, li {
   list-style: none;
   display: inline;
+}
+
+/* @media (max-width: 48em) {
+  .productoverlay {
+    opacity: 1;
+    background: rgb(0, 0, 0);
+    background: rgba(0, 0, 0, 0.5);
+    color: #f1f1f1;
+  } */
 }
