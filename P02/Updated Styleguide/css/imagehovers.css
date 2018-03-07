@@ -1,0 +1,71 @@
+.continents, .trips {
+  position: relative;
+  /* width: 50%; */
+}
+
+.productimage {
+  position: relative;
+  width: 100%
+}
+
+.productoverlay {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 100%;
+  width: 100%;
+  opacity: 0;
+  transition: .5s ease;
+  background-color: #FFFFFF;
+}
+
+.continents:hover .productoverlay {
+  opacity: 0.7;
+}
+
+.trips:hover .productoverlay {
+  opacity: 0.7;
+}
+
+.producttext {
+  color: white;
+  font-size: 1.2rem;
+  font-family: 'Oswald', 'Arial', sans-serif;
+  font-weight: normal;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+#trips .producttext {
+  font-family: 'Source Sans Pro', 'Arial', sans-serif;
+  letter-spacing: 0;
+  font-weight: 400;
+  font-size: 1.1em;
+  line-height: 1.5em;
+  text-transform: none;
+}
+
+ul {
+  white-space: nowrap;
+}
+ul, li {
+  list-style: none;
+  display: inline;
+}
+
+@media (max-width: 48em) {
+  .productoverlay {
+    opacity: 0.7;
+    /* background: rgb(0, 0, 0);
+    background: rgba(0, 0, 0, 0.5);
+    color: #f1f1f1; */
+  }
+}
