@@ -13,6 +13,11 @@
   <link rel="stylesheet" href="css/normalize.css">
   <link rel="stylesheet" href="css/fonts.css">
   <link rel="stylesheet" href="css/productgrid.css">
+  <link rel="stylesheet" href="css/star.css">
+
+<!-- Link to the star shapes for rating -->
+  <link rel='stylesheet prefetch' href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.2.0/css/font-awesome.min.css'>
+
 </head>
 
 <body>
@@ -34,7 +39,7 @@
 
 </header>
 
-
+<div class="wrap">
 <img src="img/rockiesbanner.jpg" alt="Winter Mountains" style="width:100%"/>
 
 
@@ -46,6 +51,35 @@
 
 
 <h2>Explore The Canadian Rockies</h2>
+<!-- STAR RATING Retrieved from https://codepen.io/jexordexan/pen/yyYEJa & https://jsfiddle.net/mindplay/dsh53cnr/-->
+<br>
+<h3> Rating </h3>
+
+<form action="">
+  <div class="stars">
+      <input id="star-5" type="radio" name="star"/>
+      <label for="star-5"></label>
+      <input id="star-4" type="radio" name="star"/>
+      <label for="star-4"></label>
+      <input id="star-3" type="radio" name="star"/>
+      <label for="star-3"></label>
+      <input id="star-2" type="radio" name="star"/>
+      <label for="star-2"></label>
+      <input id="star-1" type="radio" name="star"/>
+      <label for="star-1"></label>
+  </div>
+  <div class="rev-box">
+    <textarea class="review" col="30" name="review"></textarea>
+    <label class="review" for="review"></label>
+  </div>
+  <!-- <input type="text" placeholder="Write a review" id="review-box"> -->
+  <div class="form-group"><input type="text" placeholder="Write a Review" id="review-box"></div>
+</form>
+
+
+
+<!-- Grid Code help and assembly from https://www.w3schools.com/howto/howto_css_portfolio_gallery.asp -->
+
 <p>Adventure and excitement await you in Canada’s Rocky Mountains. Here in the land of snow-capped mountains and crystal clear alpine lakes you’ll find one of the most beautiful, unspoiled vacation spots you can imagine.
 <br>
 <br> Amid scenery that will take your breath away, the Rocky Mountains are a year-round adventure playground, offering a wealth of winter and summer activities.</p>
@@ -144,10 +178,14 @@
   <p> Discover magnificent icefalls as you traverse the steel catwalks of Johnson Canyon for spectaular views of the canyon below. This is must-do winter activity is perfect for all ages.</p>
 </div>
 
+<form action="purchase-rockies.html">
+  <button type="submit" class="submit-btn">Book Now</button>
+</form>
 
 
 <!-- END MAIN -->
 </section>
+</div>
 <script src="js/hamburger.js"></script>
 </body>
 
