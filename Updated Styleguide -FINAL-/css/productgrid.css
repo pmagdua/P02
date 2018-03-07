@@ -1,0 +1,269 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    /* background-color: #f1f1f1; */
+    /* padding: 20px; */
+    font-size: 1rem;
+    margin: 0 auto;
+    padding: 0 auto;
+}
+
+/* Center website */
+.main {
+    max-width: 1000px;
+    margin: auto;
+}
+
+h1 {
+  font-family: 'Oswald', 'Arial', sans-serif;
+  text-transform: uppercase;
+  font-weight: normal;
+  color: #474747;
+  font-size: 1.5em;
+  letter-spacing: 0.1em;
+  padding-bottom: 0.25em;
+  text-align: center;
+  word-break: break-all;
+}
+
+
+h2 {
+  font-family: 'Oswald', 'Arial', sans-serif;
+  font-weight: normal;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  font-size: 1.5em;
+  color: #474747;
+}
+
+h3 {
+  font-family: 'Source Sans Pro', 'Arial', sans-serif;
+  font-weight: bold;
+  font-size: 1.2em;
+  color: #474747;
+}
+
+a, a:visited {
+  text-decoration: none;
+  color: #474747;
+  -webkit-transition: color 0.5s;
+  transition: color 0.5s;
+}
+
+a:hover, a:active, a:focus {
+  color: #a8a8a8;
+}
+
+p, li, form, button, cite {
+  font-family: 'Source Sans Pro', 'Arial', sans-serif;
+  font-weight: 300;
+  font-size: 1.2em;
+  line-height: 1.5em;
+}
+
+section {
+  padding-bottom: 2em;
+}
+
+.submit-btn {
+  float: right;
+  margin-bottom: 0.5em;
+}
+
+/* TOP NAVIGATION BAR */
+header {
+  background: #fff;
+  overflow: hidden;
+  min-height: 5em;
+  width: 100%;
+  border-bottom: 0.15px solid #a8a8a8;
+  position: relative;
+  padding: 0;
+  margin: 0;
+}
+
+header h1 {
+  float: left;
+  margin: 0;
+  padding-top: 0.5em;
+  padding-bottom: 0.5em;
+  padding-left: 5%;
+}
+
+header h1 a, header h1 a:visited {
+  font-size: 2rem;
+  letter-spacing: 0.1em;
+  font-family: 'Oswald', 'Arial', sans-serif;
+  font-weight: normal;
+}
+
+.nav-top {
+  padding-right: 5%;
+  margin: 0;
+}
+
+.nav-top-links {
+  float: right;
+}
+
+.nav-top a, .nav-top a:visited {
+  display: inline-block;
+  padding: 1.85em 0.75em 1.2em 0.75em;
+  font-size: 1.2rem;
+  font-family: 'Oswald', 'Arial', sans-serif;
+  font-weight: normal;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  font-size: 1rem;
+}
+
+.nav-top .icon {
+  display: none;
+}
+
+.container {
+  position: relative;
+}
+
+.content p {
+  padding-right: 1em;
+}
+
+.image {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+.overlay {
+  position: absolute;
+  bottom: 0;
+  background: rgb(0, 0, 0);
+  background: rgba(0, 0, 0, 0.5); /* Black see-through */
+  color: #f1f1f1;
+  width: 100%;
+  transition: .5s ease;
+  opacity: 0;
+  color: white;
+  padding: 10px;
+  text-align: center;
+  font-family: 'Oswald', 'Arial', sans-serif;
+  font-weight: 300;
+  font-size: 1.2rem;
+}
+
+.container:hover .overlay {
+  opacity: 1;
+}
+
+.row {
+    margin: 8px -16px;
+}
+
+/* Add padding BETWEEN each column (if you want) */
+.row,
+.row > .column {
+    padding: 5px;
+}
+
+/* Create four equal columns that floats next to each other */
+.column {
+    float: left;
+    width: 25%;
+}
+
+/* Clear floats after rows */
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+/* Content */
+.content {
+    /* background-color: #f1f1f1; */
+    padding:0;
+    margin: 0;
+    width: 100%;
+    height: 25%;
+}
+
+/* Footer */
+* FOOTER */
+footer {
+  width: 100%;
+  height: 4em;
+  border-top: 0.15px solid #a8a8a8;
+  position: relative;
+  padding: 0;
+  margin: 0;
+}
+
+.footer-content {
+  padding-top: 1.8em;
+  padding-bottom: 0.5em;
+  font-family: "Source Sans Pro", "Arial", sans-serif;
+  font-weight: 300;
+  text-align: center;
+}
+
+/* Responsive layout - adjust padding on the left and right */
+@media (max-width: 1110px) {
+  .main-content {
+    margin-left: 5%;
+    margin-right: 5%;
+  }
+}
+
+/* Responsive layout - makes a two column-layout instead of four columns */
+@media (max-width: 900px) {
+    .column {
+        width: 50%;
+    }
+    .overlay {
+      opacity: 1;
+    }
+}
+
+/* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+@media (max-width: 600px) {
+    .column {
+        width: 100%;
+    }
+    .overlay {
+      opacity: 1;
+    }
+}
+
+/* Show hamburger icon */
+@media (max-width: 35em) {
+  /* Show hamburger icon */
+  .nav-top a.icon, a:visited.icon {
+    float: right;
+    display: block;
+    margin-top: 1.75em;
+  }
+
+  .nav-top.responsive {
+    position: relative;
+  }
+
+  .nav-top.responsive a.icon {
+   position: absolute;
+   right: 0;
+   top: 0;
+  }
+
+  .nav-top.responsive a {
+   float: left;
+   display: block;
+   text-align: left;
+  }
+
+  .main-content {
+    margin-left: 3%;
+    margin-right: 3%;
+  }
+}
